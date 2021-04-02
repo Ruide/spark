@@ -103,3 +103,10 @@ spark-warehouse/
 
 # For SBT
 .jvmopts
+
+# For local dev
+.metals/
+.vscode/
+ruide_env.sh
+core/.metals
+core/.vscode
