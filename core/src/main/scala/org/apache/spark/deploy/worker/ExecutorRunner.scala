@@ -178,7 +178,6 @@ private[deploy] class ExecutorRunner(
         }
       builder.environment.put("SPARK_LOG_URL_STDERR", s"${baseUrl}stderr")
       builder.environment.put("SPARK_LOG_URL_STDOUT", s"${baseUrl}stdout")
-      builder.command(redactedCommand)
       process = builder.start()
       val header = "Spark Executor Command: %s\n%s\n\n".format(
         redactedCommand, "=" * 40)
