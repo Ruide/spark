@@ -49,6 +49,10 @@ object CommandUtils extends Logging {
     val localCommand = buildLocalCommand(
       command, securityMgr, substituteArguments, classPaths, env)
     val commandSeq = buildCommandSeq(localCommand, memory, sparkHome)
+    commandSeq.patch(0,
+      Seq("/opt/occlum/build/bin/occlum", "run",
+        "/usr/lib/jvm/java-11-alibaba-dragonwell/jre/bin/java"),
+      1)
     val builder = new ProcessBuilder(commandSeq: _*)
     val environment = builder.environment()
     for ((key, value) <- localCommand.environment) {
