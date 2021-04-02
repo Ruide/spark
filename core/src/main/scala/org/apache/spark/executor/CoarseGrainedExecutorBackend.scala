@@ -17,16 +17,17 @@
 
 package org.apache.spark.executor
 
+import java.io.{File, IOException}
 import java.net.URL
 import java.nio.ByteBuffer
 import java.util.Locale
 import java.util.concurrent.atomic.AtomicBoolean
 
+import org.json4s.DefaultFormats
 import scala.collection.mutable
+import scala.collection.mutable.HashMap
 import scala.util.{Failure, Success}
 import scala.util.control.NonFatal
-
-import org.json4s.DefaultFormats
 
 import org.apache.spark._
 import org.apache.spark.TaskState.TaskState
@@ -372,6 +373,8 @@ private[spark] object CoarseGrainedExecutorBackend extends Logging {
       resourcesFileOpt: Option[String],
       resourceProfileId: Int)
 
+  val appDirectories = new HashMap[String, Seq[String]]
+
   def main(args: Array[String]): Unit = {
     val createFn: (RpcEnv, Arguments, SparkEnv, ResourceProfile) =>
       CoarseGrainedExecutorBackend = { case (rpcEnv, arguments, env, resourceProfile) =>
@@ -379,8 +382,41 @@ private[spark] object CoarseGrainedExecutorBackend extends Logging {
         arguments.bindAddress, arguments.hostname, arguments.cores, arguments.userClassPath.toSeq,
         env, arguments.resourcesFileOpt, resourceProfile)
     }
+    createExecutorDirs(parseArguments(args, this.getClass.getCanonicalName.stripSuffix("$")))
     run(parseArguments(args, this.getClass.getCanonicalName.stripSuffix("$")), createFn)
     System.exit(0)
+  }
+
+  def createExecutorDirs(arguments: Arguments): Unit = {
+    // Create the executor's working directory
+    val executorDir = new File("./", arguments.appId + "/" + arguments.executorId)
+    if (!executorDir.mkdirs()) {
+      throw new IOException("Failed to create directory " + executorDir)
+    }
+
+    // Create local dirs for the executor. These are passed to the executor via the
+    // SPARK_EXECUTOR_DIRS environment variable, and deleted by the Worker when the
+    // application finishes.
+    val appLocalDirs = appDirectories.getOrElse(arguments.appId, {
+      val conf = new SparkConf
+      val localRootDirs = Utils.getOrCreateLocalRootDirs(conf)
+      val dirs = localRootDirs.flatMap { dir =>
+        try {
+          val appDir = Utils.createDirectory(dir, namePrefix = "executor")
+          Utils.chmod700(appDir)
+          Some(appDir.getAbsolutePath())
+        } catch {
+          case e: IOException =>
+            logWarning(s"${e.getMessage}. Ignoring this directory.")
+            None
+        }
+      }.toSeq
+      if (dirs.isEmpty) {
+        throw new IOException("No subfolder can be created in " +
+          s"${localRootDirs.mkString(",")}.")
+      }
+      dirs
+    })
   }
 
   def run(
@@ -526,20 +562,20 @@ private[spark] object CoarseGrainedExecutorBackend extends Logging {
     // scalastyle:off println
     System.err.println(
       s"""
-      |Usage: $classNameForEntry [options]
-      |
-      | Options are:
-      |   --driver-url <driverUrl>
-      |   --executor-id <executorId>
-      |   --bind-address <bindAddress>
-      |   --hostname <hostname>
-      |   --cores <cores>
-      |   --resourcesFile <fileWithJSONResourceInformation>
-      |   --app-id <appid>
-      |   --worker-url <workerUrl>
-      |   --user-class-path <url>
-      |   --resourceProfileId <id>
-      |""".stripMargin)
+         |Usage: $classNameForEntry [options]
+         |
+         | Options are:
+         |   --driver-url <driverUrl>
+         |   --executor-id <executorId>
+         |   --bind-address <bindAddress>
+         |   --hostname <hostname>
+         |   --cores <cores>
+         |   --resourcesFile <fileWithJSONResourceInformation>
+         |   --app-id <appid>
+         |   --worker-url <workerUrl>
+         |   --user-class-path <url>
+         |   --resourceProfileId <id>
+         |""".stripMargin)
     // scalastyle:on println
     System.exit(1)
   }

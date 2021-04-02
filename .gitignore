@@ -110,3 +110,5 @@ spark-warehouse/
 ruide_env.sh
 core/.metals
 core/.vscode
+.bloop
+core/.bloop
