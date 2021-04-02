@@ -112,3 +112,4 @@ core/.metals
 core/.vscode
 .bloop
 core/.bloop
+occlum_instance_executor
