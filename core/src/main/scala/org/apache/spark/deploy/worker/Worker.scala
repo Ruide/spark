@@ -560,10 +560,11 @@ private[deploy] class Worker(
           logInfo("Asked to launch executor %s/%d for %s".format(appId, execId, appDesc.name))
 
           // Create the executor's working directory
-          val executorDir = new File(workDir, appId + "/" + execId)
-          if (!executorDir.mkdirs()) {
-            throw new IOException("Failed to create directory " + executorDir)
-          }
+          // val executorDir = new File(workDir, appId + "/" + execId)
+          val executorDir = new File(sparkHome, "/occlum_instance_executor")
+//          if (!executorDir.mkdirs()) {
+//            throw new IOException("Failed to create directory " + executorDir)
+//          }
 
           // Create local dirs for the executor. These are passed to the executor via the
           // SPARK_EXECUTOR_DIRS environment variable, and deleted by the Worker when the

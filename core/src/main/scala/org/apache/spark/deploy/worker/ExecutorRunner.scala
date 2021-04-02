@@ -155,9 +155,12 @@ private[deploy] class ExecutorRunner(
         Utils.substituteAppNExecIds(_, appId, execId.toString)
       }
       val subsCommand = appDesc.command.copy(arguments = arguments, javaOpts = subsOpts)
+      // subsCommand.libraryPathEntries = Seq(
+      // "occlum run /usr/lib/jvm/java-11-alibaba-dragonwell/jre/bin/java")
       val builder = CommandUtils.buildProcessBuilder(subsCommand, new SecurityManager(conf),
         memory, sparkHome.getAbsolutePath, substituteVariables)
       val command = builder.command()
+      command.set(0, "occlum run /usr/lib/jvm/java-11-alibaba-dragonwell/jre/bin/java")
       val redactedCommand = Utils.redactCommandLineArgs(conf, command.asScala.toSeq)
         .mkString("\"", "\" \"", "\"")
       logInfo(s"Launch command: $redactedCommand")
@@ -178,7 +181,7 @@ private[deploy] class ExecutorRunner(
         }
       builder.environment.put("SPARK_LOG_URL_STDERR", s"${baseUrl}stderr")
       builder.environment.put("SPARK_LOG_URL_STDOUT", s"${baseUrl}stdout")
-
+      builder.command(redactedCommand)
       process = builder.start()
       val header = "Spark Executor Command: %s\n%s\n\n".format(
         redactedCommand, "=" * 40)
