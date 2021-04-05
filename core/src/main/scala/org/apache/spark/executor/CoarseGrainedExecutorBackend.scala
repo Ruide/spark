@@ -428,7 +428,7 @@ private[spark] object CoarseGrainedExecutorBackend extends Logging {
 
     SparkHadoopUtil.get.runAsSparkUser { () =>
       // Debug code
-      // Utils.checkHost(arguments.hostname)
+      Utils.checkHost(arguments.hostname)
 
       // Bootstrap to fetch the driver's Spark properties.
       val executorConf = new SparkConf
