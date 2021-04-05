@@ -183,10 +183,10 @@ private[deploy] class ExecutorRunner(
         redactedCommand, "=" * 40)
 
       // Redirect its stdout and stderr to files
-      val stdout = new File(executorDir, "stdout")
+      val stdout = new File("/tmp", "stdout")
       stdoutAppender = FileAppender(process.getInputStream, stdout, conf)
 
-      val stderr = new File(executorDir, "stderr")
+      val stderr = new File("/tmp", "stderr")
       Files.write(header, stderr, StandardCharsets.UTF_8)
       stderrAppender = FileAppender(process.getErrorStream, stderr, conf)
 
