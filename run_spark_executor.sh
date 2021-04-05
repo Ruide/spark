@@ -19,16 +19,16 @@ init_instance() {
     rm -rf occlum_instance_executor && mkdir occlum_instance_executor
     cd occlum_instance_executor
     occlum init
-    new_json="$(jq '.resource_limits.user_space_size = "4000MB" |
+    new_json="$(jq '.resource_limits.user_space_size = "8000MB" |
         .resource_limits.kernel_space_heap_size="512MB" |
         .resource_limits.kernel_space_stack_size="8MB" |
-        .resource_limits.max_num_of_threads = 256 |
-        .process.default_stack_size = "128MB" |
-        .process.default_heap_size = "1024MB" |
-        .process.default_mmap_size = "2048MB" |
+        .resource_limits.max_num_of_threads = 512 |
+        .process.default_stack_size = "256MB" |
+        .process.default_heap_size = "2048MB" |
+        .process.default_mmap_size = "4096MB" |
         .entry_points = [ "/usr/lib/jvm/java-11-alibaba-dragonwell/jre/bin" ] |
-        .env.default = [ "LD_LIBRARY_PATH=/usr/lib/jvm/java-11-alibaba-dragonwell/jre/lib/server:/usr/lib/jvm/java-11-alibaba-dragonwell/jre/lib:/usr/lib/jvm/java-11-alibaba-dragonwell/jre/../lib","SPARK_USER=root","SPARK_HOME=/bin","SPARK_SCALA_VERSION=2.12","SPARK_CONF_DIR=/bin/conf" ] |
-        .env.untrusted = ["SPARK_EXECUTOR_DIRS","SPARK_LAUNCH_WITH_SCALA","SPARK_LOG_URL_STDERR","SPARK_LOG_URL_STDOUT"] ' Occlum.json)" && \
+        .env.default = [ "LD_LIBRARY_PATH=/usr/lib/jvm/java-11-alibaba-dragonwell/jre/lib/server:/usr/lib/jvm/java-11-alibaba-dragonwell/jre/lib:/usr/lib/jvm/java-11-alibaba-dragonwell/jre/../lib","SPARK_USER=root","SPARK_HOME=/bin","USER=root", "SPARK_IDENT_STRING=root", "SPARK_SCALA_VERSION=2.12","SPARK_CONF_DIR=/bin/conf" ] |
+        .env.untrusted = [ "SPARK_EXECUTOR_DIRS","SPARK_LAUNCH_WITH_SCALA","SPARK_LOG_URL_STDERR","SPARK_LOG_URL_STDOUT" ] ' Occlum.json)" && \
     echo "${new_json}" > Occlum.json
 }
     #   "_JAVA_OPTIONS=-Djdk.lang.Process.launchMechanism=POSIX_SPAWN"
@@ -59,6 +59,10 @@ build_spark() {
     mkdir -p image/bin/jars
     cp -rf ../assembly/target/scala-2.12/jars/* image/bin/jars
     cp -rf ../conf image/bin/conf
+    cp -rf ../hosts image/etc/
+    cp /etc/passwd image/etc/
+    cp /etc/resolv.conf image/etc/
+    cp /etc/timezone image/etc/
     occlum build
 }
 
