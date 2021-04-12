@@ -49,6 +49,9 @@ build_spark() {
     # Copy JVM and class file into Occlum instance and build
     mkdir -p image/usr/lib/jvm
     cp -r /opt/occlum/toolchains/jvm/java-11-alibaba-dragonwell image/usr/lib/jvm
+    sed -i '10 a grant codeBase "file:/bin/-" {' image/usr/lib/jvm/java-11-alibaba-dragonwell/lib/security/default.policy
+    sed -i '11 a \ \ \ \ permission java.security.AllPermission;' image/usr/lib/jvm/java-11-alibaba-dragonwell/lib/security/default.policy
+    sed -i '12 a };' image/usr/lib/jvm/java-11-alibaba-dragonwell/lib/security/default.policy
     cp /usr/local/occlum/x86_64-linux-musl/lib/libz.so.1 image/lib
     cp $occlum_glibc/libdl.so.2 image/$occlum_glibc
     cp $occlum_glibc/librt.so.1 image/$occlum_glibc
