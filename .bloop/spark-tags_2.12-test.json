@@ -1,0 +1,717 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "spark-tags_2.12-test",
+        "directory": "/home/rd/Github/spark/common/tags",
+        "workspaceDir": "/home/rd/Github/spark",
+        "sources": [
+            "/home/rd/Github/spark/common/tags/src/test/java"
+        ],
+        "dependencies": [
+            "spark-tags_2.12",
+            "spark-parent_2.12"
+        ],
+        "classpath": [
+            "/home/rd/Github/spark/target/test-classes",
+            "/home/rd/Github/spark/target/classes",
+            "/home/rd/Github/spark/common/tags/target/scala-2.12/test-classes",
+            "/home/rd/Github/spark/common/tags/target/scala-2.12/classes",
+            "/home/rd/.m2/repository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10.jar",
+            "/home/rd/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest_2.12/3.2.3/scalatest_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-core_2.12/3.2.3/scalatest-core_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-compatible/3.2.3/scalatest-compatible-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalactic/scalactic_2.12/3.2.3/scalactic_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scala-lang/modules/scala-xml_2.12/1.2.0/scala-xml_2.12-1.2.0.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-featurespec_2.12/3.2.3/scalatest-featurespec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-flatspec_2.12/3.2.3/scalatest-flatspec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-freespec_2.12/3.2.3/scalatest-freespec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-funsuite_2.12/3.2.3/scalatest-funsuite_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-funspec_2.12/3.2.3/scalatest-funspec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-propspec_2.12/3.2.3/scalatest-propspec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-refspec_2.12/3.2.3/scalatest-refspec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-wordspec_2.12/3.2.3/scalatest-wordspec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-diagrams_2.12/3.2.3/scalatest-diagrams_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-matchers-core_2.12/3.2.3/scalatest-matchers-core_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-shouldmatchers_2.12/3.2.3/scalatest-shouldmatchers_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-mustmatchers_2.12/3.2.3/scalatest-mustmatchers_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10.jar",
+            "/home/rd/.m2/repository/org/scalatestplus/scalatestplus-scalacheck_2.12/3.1.0.0-RC2/scalatestplus-scalacheck_2.12-3.1.0.0-RC2.jar",
+            "/home/rd/.m2/repository/org/scalacheck/scalacheck_2.12/1.14.2/scalacheck_2.12-1.14.2.jar",
+            "/home/rd/.m2/repository/org/scalatestplus/scalatestplus-mockito_2.12/1.0.0-SNAP5/scalatestplus-mockito_2.12-1.0.0-SNAP5.jar",
+            "/home/rd/.m2/repository/org/mockito/mockito-core/3.4.6/mockito-core-3.4.6.jar",
+            "/home/rd/.m2/repository/net/bytebuddy/byte-buddy/1.10.13/byte-buddy-1.10.13.jar",
+            "/home/rd/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.13/byte-buddy-agent-1.10.13.jar",
+            "/home/rd/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar",
+            "/home/rd/.m2/repository/org/scalatestplus/scalatestplus-selenium_2.12/1.0.0-SNAP5/scalatestplus-selenium_2.12-1.0.0-SNAP5.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar",
+            "/home/rd/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar",
+            "/home/rd/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar",
+            "/home/rd/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar",
+            "/home/rd/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar",
+            "/home/rd/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+            "/home/rd/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar",
+            "/home/rd/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"
+        ],
+        "out": "/home/rd/Github/spark/common/tags/target",
+        "classesDir": "/home/rd/Github/spark/common/tags/target/scala-2.12/test-classes",
+        "resources": [
+            
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.12.10",
+            "options": [
+                "-unchecked",
+                "-deprecation",
+                "-feature",
+                "-explaintypes",
+                "-target:jvm-1.8",
+                "-Xfatal-warnings",
+                "-Ywarn-unused:imports",
+                "-P:silencer:globalFilters=.*deprecated.*",
+                "-Xplugin:/home/rd/.m2/repository/com/github/ghik/silencer-plugin_2.12.10/1.6.0/silencer-plugin_2.12.10-1.6.0.jar"
+            ],
+            "jars": [
+                "/home/rd/.m2/repository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10.jar",
+                "/home/rd/.m2/repository/org/scala-lang/scala-compiler/2.12.10/scala-compiler-2.12.10.jar",
+                "/home/rd/.m2/repository/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10.jar",
+                "/home/rd/.m2/repository/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar",
+                "/home/rd/.m2/repository/org/scala-lang/scala-library/2.12.0/scala-library-2.12.0.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                "-source",
+                "1.8",
+                "-target",
+                "1.8",
+                "-Xlint:all,-serial,-path,-try",
+                "-g",
+                "-target",
+                "1.8",
+                "-source",
+                "1.8",
+                "-encoding",
+                "UTF-8"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework",
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "utest.runner.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    {
+                        "args": [
+                            "-v",
+                            "-a"
+                        ],
+                        "framework": {
+                            "names": [
+                                "com.novocode.junit.JUnitFramework"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/home/rd/.sdkman/candidates/java/11.0.10.hs-adpt",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-mustmatchers_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-mustmatchers_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-mustmatchers_2.12/3.2.3/scalatest-mustmatchers_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-firefox-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-firefox-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.mockito",
+                    "name": "mockito-core",
+                    "version": "3.4.6",
+                    "artifacts": [
+                        {
+                            "name": "mockito-core",
+                            "path": "/home/rd/.m2/repository/org/mockito/mockito-core/3.4.6/mockito-core-3.4.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.10",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/rd/.m2/repository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-exec",
+                    "version": "1.3",
+                    "artifacts": [
+                        {
+                            "name": "commons-exec",
+                            "path": "/home/rd/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-wordspec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-wordspec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-wordspec_2.12/3.2.3/scalatest-wordspec_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatestplus",
+                    "name": "scalatestplus-mockito_2.12",
+                    "version": "1.0.0-SNAP5",
+                    "artifacts": [
+                        {
+                            "name": "scalatestplus-mockito_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatestplus/scalatestplus-mockito_2.12/1.0.0-SNAP5/scalatestplus-mockito_2.12-1.0.0-SNAP5.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.12.10",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/home/rd/.m2/repository/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalactic",
+                    "name": "scalactic_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalactic_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalactic/scalactic_2.12/3.2.3/scalactic_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-api",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-api",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funsuite_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funsuite_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-funsuite_2.12/3.2.3/scalatest-funsuite_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-matchers-core_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-matchers-core_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-matchers-core_2.12/3.2.3/scalatest-matchers-core_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatestplus",
+                    "name": "scalatestplus-selenium_2.12",
+                    "version": "1.0.0-SNAP5",
+                    "artifacts": [
+                        {
+                            "name": "scalatestplus-selenium_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatestplus/scalatestplus-selenium_2.12/1.0.0-SNAP5/scalatestplus-selenium_2.12-1.0.0-SNAP5.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.squareup.okhttp3",
+                    "name": "okhttp",
+                    "version": "3.11.0",
+                    "artifacts": [
+                        {
+                            "name": "okhttp",
+                            "path": "/home/rd/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.bytebuddy",
+                    "name": "byte-buddy",
+                    "version": "1.10.13",
+                    "artifacts": [
+                        {
+                            "name": "byte-buddy",
+                            "path": "/home/rd/.m2/repository/net/bytebuddy/byte-buddy/1.10.13/byte-buddy-1.10.13.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-propspec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-propspec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-propspec_2.12/3.2.3/scalatest-propspec_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "junit",
+                    "name": "junit",
+                    "version": "4.13.1",
+                    "artifacts": [
+                        {
+                            "name": "junit",
+                            "path": "/home/rd/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funspec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funspec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-funspec_2.12/3.2.3/scalatest-funspec_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-featurespec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-featurespec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-featurespec_2.12/3.2.3/scalatest-featurespec_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-freespec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-freespec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-freespec_2.12/3.2.3/scalatest-freespec_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-support",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-support",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-java",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-java",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest_2.12/3.2.3/scalatest_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-refspec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-refspec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-refspec_2.12/3.2.3/scalatest-refspec_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-core_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-core_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-core_2.12/3.2.3/scalatest-core_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-safari-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-safari-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatestplus",
+                    "name": "scalatestplus-scalacheck_2.12",
+                    "version": "3.1.0.0-RC2",
+                    "artifacts": [
+                        {
+                            "name": "scalatestplus-scalacheck_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatestplus/scalatestplus-scalacheck_2.12/3.1.0.0-RC2/scalatestplus-scalacheck_2.12-3.1.0.0-RC2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hamcrest",
+                    "name": "hamcrest-core",
+                    "version": "1.3",
+                    "artifacts": [
+                        {
+                            "name": "hamcrest-core",
+                            "path": "/home/rd/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-sbt",
+                    "name": "test-interface",
+                    "version": "1.0",
+                    "artifacts": [
+                        {
+                            "name": "test-interface",
+                            "path": "/home/rd/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.12",
+                    "version": "1.2.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.12",
+                            "path": "/home/rd/.m2/repository/org/scala-lang/modules/scala-xml_2.12/1.2.0/scala-xml_2.12-1.2.0.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.12",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/scala-lang/modules/scala-xml_2.12/1.2.0/scala-xml_2.12-1.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-edge-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-edge-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-ie-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-ie-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-chrome-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-chrome-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-shouldmatchers_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-shouldmatchers_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-shouldmatchers_2.12/3.2.3/scalatest-shouldmatchers_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.squareup.okio",
+                    "name": "okio",
+                    "version": "1.14.0",
+                    "artifacts": [
+                        {
+                            "name": "okio",
+                            "path": "/home/rd/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar"
+                        },
+                        {
+                            "name": "okio",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalacheck",
+                    "name": "scalacheck_2.12",
+                    "version": "1.14.2",
+                    "artifacts": [
+                        {
+                            "name": "scalacheck_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalacheck/scalacheck_2.12/1.14.2/scalacheck_2.12-1.14.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.bytebuddy",
+                    "name": "byte-buddy-agent",
+                    "version": "1.10.13",
+                    "artifacts": [
+                        {
+                            "name": "byte-buddy-agent",
+                            "path": "/home/rd/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.13/byte-buddy-agent-1.10.13.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.novocode",
+                    "name": "junit-interface",
+                    "version": "0.11",
+                    "artifacts": [
+                        {
+                            "name": "junit-interface",
+                            "path": "/home/rd/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-remote-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-remote-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.spark-project.spark",
+                    "name": "unused",
+                    "version": "1.0.0",
+                    "artifacts": [
+                        {
+                            "name": "unused",
+                            "path": "/home/rd/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar"
+                        },
+                        {
+                            "name": "unused",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-compatible",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-compatible",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-compatible/3.2.3/scalatest-compatible-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-opera-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-opera-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-diagrams_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-diagrams_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-diagrams_2.12/3.2.3/scalatest-diagrams_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.objenesis",
+                    "name": "objenesis",
+                    "version": "2.6",
+                    "artifacts": [
+                        {
+                            "name": "objenesis",
+                            "path": "/home/rd/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar"
+                        },
+                        {
+                            "name": "objenesis",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-flatspec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-flatspec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-flatspec_2.12/3.2.3/scalatest-flatspec_2.12-3.2.3.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}

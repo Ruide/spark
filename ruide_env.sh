@@ -1,0 +1,4 @@
+#!/bin/bash
+export SPARK_SCALA_VERSION=2.12
+export SPARK_PREPEND_CLASSES=true
+export SPARK_PRINT_LAUNCH_COMMAND=1

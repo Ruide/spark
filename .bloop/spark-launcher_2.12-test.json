@@ -1,0 +1,2081 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "spark-launcher_2.12-test",
+        "directory": "/home/rd/Github/spark/launcher",
+        "workspaceDir": "/home/rd/Github/spark",
+        "sources": [
+            "/home/rd/Github/spark/launcher/src/test/java"
+        ],
+        "dependencies": [
+            "spark-launcher_2.12",
+            "spark-parent_2.12",
+            "spark-tags_2.12"
+        ],
+        "classpath": [
+            "/home/rd/Github/spark/target/test-classes",
+            "/home/rd/Github/spark/target/classes",
+            "/home/rd/Github/spark/common/tags/target/scala-2.12/test-classes",
+            "/home/rd/Github/spark/common/tags/target/scala-2.12/classes",
+            "/home/rd/Github/spark/launcher/target/scala-2.12/test-classes",
+            "/home/rd/Github/spark/launcher/target/scala-2.12/classes",
+            "/home/rd/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar",
+            "/home/rd/.m2/repository/org/mockito/mockito-core/3.4.6/mockito-core-3.4.6.jar",
+            "/home/rd/.m2/repository/net/bytebuddy/byte-buddy/1.10.13/byte-buddy-1.10.13.jar",
+            "/home/rd/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.13/byte-buddy-agent-1.10.13.jar",
+            "/home/rd/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar",
+            "/home/rd/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar",
+            "/home/rd/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar",
+            "/home/rd/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar",
+            "/home/rd/.m2/repository/org/apache/spark/spark-tags_2.12/3.1.1/spark-tags_2.12-3.1.1.jar",
+            "/home/rd/.m2/repository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10.jar",
+            "/home/rd/.m2/repository/org/apache/spark/spark-tags_2.12/3.1.1/spark-tags_2.12-3.1.1-tests.jar",
+            "/home/rd/.m2/repository/org/apache/hadoop/hadoop-client/3.2.0/hadoop-client-3.2.0.jar",
+            "/home/rd/.m2/repository/org/apache/hadoop/hadoop-common/3.2.0/hadoop-common-3.2.0.jar",
+            "/home/rd/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar",
+            "/home/rd/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar",
+            "/home/rd/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar",
+            "/home/rd/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar",
+            "/home/rd/.m2/repository/org/apache/httpcomponents/httpcore/4.4.12/httpcore-4.4.12.jar",
+            "/home/rd/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar",
+            "/home/rd/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar",
+            "/home/rd/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar",
+            "/home/rd/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar",
+            "/home/rd/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.36.v20210114/jetty-servlet-9.4.36.v20210114.jar",
+            "/home/rd/.m2/repository/org/eclipse/jetty/jetty-security/9.4.36.v20210114/jetty-security-9.4.36.v20210114.jar",
+            "/home/rd/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.36.v20210114/jetty-util-ajax-9.4.36.v20210114.jar",
+            "/home/rd/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar",
+            "/home/rd/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar",
+            "/home/rd/.m2/repository/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1.jar",
+            "/home/rd/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar",
+            "/home/rd/.m2/repository/org/apache/commons/commons-text/1.6/commons-text-1.6.jar",
+            "/home/rd/.m2/repository/org/apache/avro/avro/1.8.2/avro-1.8.2.jar",
+            "/home/rd/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar",
+            "/home/rd/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar",
+            "/home/rd/.m2/repository/org/xerial/snappy/snappy-java/1.1.8.2/snappy-java-1.1.8.2.jar",
+            "/home/rd/.m2/repository/org/tukaani/xz/1.5/xz-1.5.jar",
+            "/home/rd/.m2/repository/com/google/re2j/re2j/1.1/re2j-1.1.jar",
+            "/home/rd/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar",
+            "/home/rd/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar",
+            "/home/rd/.m2/repository/org/apache/hadoop/hadoop-auth/3.2.0/hadoop-auth-3.2.0.jar",
+            "/home/rd/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.1/nimbus-jose-jwt-4.41.1.jar",
+            "/home/rd/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar",
+            "/home/rd/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar",
+            "/home/rd/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar",
+            "/home/rd/.m2/repository/org/apache/curator/curator-framework/2.13.0/curator-framework-2.13.0.jar",
+            "/home/rd/.m2/repository/org/apache/curator/curator-client/2.13.0/curator-client-2.13.0.jar",
+            "/home/rd/.m2/repository/org/apache/curator/curator-recipes/2.13.0/curator-recipes-2.13.0.jar",
+            "/home/rd/.m2/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar",
+            "/home/rd/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar",
+            "/home/rd/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerb-simplekdc/1.0.1/kerb-simplekdc-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerb-client/1.0.1/kerb-client-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerby-config/1.0.1/kerby-config-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerb-core/1.0.1/kerb-core-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerby-pkix/1.0.1/kerby-pkix-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerby-asn1/1.0.1/kerby-asn1-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerby-util/1.0.1/kerby-util-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerb-common/1.0.1/kerb-common-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerb-crypto/1.0.1/kerb-crypto-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerb-util/1.0.1/kerb-util-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/token-provider/1.0.1/token-provider-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerb-admin/1.0.1/kerb-admin-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerb-server/1.0.1/kerb-server-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerb-identity/1.0.1/kerb-identity-1.0.1.jar",
+            "/home/rd/.m2/repository/org/apache/kerby/kerby-xdr/1.0.1/kerby-xdr-1.0.1.jar",
+            "/home/rd/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0.jar",
+            "/home/rd/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0.jar",
+            "/home/rd/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar",
+            "/home/rd/.m2/repository/com/fasterxml/woodstox/woodstox-core/5.0.3/woodstox-core-5.0.3.jar",
+            "/home/rd/.m2/repository/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.jar",
+            "/home/rd/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.2.0/hadoop-hdfs-client-3.2.0.jar",
+            "/home/rd/.m2/repository/com/squareup/okhttp/okhttp/2.7.5/okhttp-2.7.5.jar",
+            "/home/rd/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0.jar",
+            "/home/rd/.m2/repository/org/apache/hadoop/hadoop-yarn-api/3.2.0/hadoop-yarn-api-3.2.0.jar",
+            "/home/rd/.m2/repository/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11.jar",
+            "/home/rd/.m2/repository/org/apache/hadoop/hadoop-yarn-client/3.2.0/hadoop-yarn-client-3.2.0.jar",
+            "/home/rd/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/3.2.0/hadoop-mapreduce-client-core-3.2.0.jar",
+            "/home/rd/.m2/repository/org/apache/hadoop/hadoop-yarn-common/3.2.0/hadoop-yarn-common-3.2.0.jar",
+            "/home/rd/.m2/repository/org/eclipse/jetty/jetty-util/9.4.36.v20210114/jetty-util-9.4.36.v20210114.jar",
+            "/home/rd/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.10.0/jackson-module-jaxb-annotations-2.10.0.jar",
+            "/home/rd/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar",
+            "/home/rd/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar",
+            "/home/rd/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.9.5/jackson-jaxrs-json-provider-2.9.5.jar",
+            "/home/rd/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.9.5/jackson-jaxrs-base-2.9.5.jar",
+            "/home/rd/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-jobclient/3.2.0/hadoop-mapreduce-client-jobclient-3.2.0.jar",
+            "/home/rd/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-common/3.2.0/hadoop-mapreduce-client-common-3.2.0.jar",
+            "/home/rd/.m2/repository/org/apache/hadoop/hadoop-annotations/3.2.0/hadoop-annotations-3.2.0.jar",
+            "/home/rd/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest_2.12/3.2.3/scalatest_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-core_2.12/3.2.3/scalatest-core_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-compatible/3.2.3/scalatest-compatible-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalactic/scalactic_2.12/3.2.3/scalactic_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scala-lang/modules/scala-xml_2.12/1.2.0/scala-xml_2.12-1.2.0.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-featurespec_2.12/3.2.3/scalatest-featurespec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-flatspec_2.12/3.2.3/scalatest-flatspec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-freespec_2.12/3.2.3/scalatest-freespec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-funsuite_2.12/3.2.3/scalatest-funsuite_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-funspec_2.12/3.2.3/scalatest-funspec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-propspec_2.12/3.2.3/scalatest-propspec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-refspec_2.12/3.2.3/scalatest-refspec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-wordspec_2.12/3.2.3/scalatest-wordspec_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-diagrams_2.12/3.2.3/scalatest-diagrams_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-matchers-core_2.12/3.2.3/scalatest-matchers-core_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-shouldmatchers_2.12/3.2.3/scalatest-shouldmatchers_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scalatest/scalatest-mustmatchers_2.12/3.2.3/scalatest-mustmatchers_2.12-3.2.3.jar",
+            "/home/rd/.m2/repository/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10.jar",
+            "/home/rd/.m2/repository/org/scalatestplus/scalatestplus-scalacheck_2.12/3.1.0.0-RC2/scalatestplus-scalacheck_2.12-3.1.0.0-RC2.jar",
+            "/home/rd/.m2/repository/org/scalacheck/scalacheck_2.12/1.14.2/scalacheck_2.12-1.14.2.jar",
+            "/home/rd/.m2/repository/org/scalatestplus/scalatestplus-mockito_2.12/1.0.0-SNAP5/scalatestplus-mockito_2.12-1.0.0-SNAP5.jar",
+            "/home/rd/.m2/repository/org/scalatestplus/scalatestplus-selenium_2.12/1.0.0-SNAP5/scalatestplus-selenium_2.12-1.0.0-SNAP5.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar",
+            "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar",
+            "/home/rd/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar",
+            "/home/rd/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar",
+            "/home/rd/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar",
+            "/home/rd/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar",
+            "/home/rd/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+            "/home/rd/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar",
+            "/home/rd/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"
+        ],
+        "out": "/home/rd/Github/spark/launcher/target",
+        "classesDir": "/home/rd/Github/spark/launcher/target/scala-2.12/test-classes",
+        "resources": [
+            
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.12.10",
+            "options": [
+                "-unchecked",
+                "-deprecation",
+                "-feature",
+                "-explaintypes",
+                "-target:jvm-1.8",
+                "-Xfatal-warnings",
+                "-Ywarn-unused:imports",
+                "-P:silencer:globalFilters=.*deprecated.*",
+                "-Xplugin:/home/rd/.m2/repository/com/github/ghik/silencer-plugin_2.12.10/1.6.0/silencer-plugin_2.12.10-1.6.0.jar"
+            ],
+            "jars": [
+                "/home/rd/.m2/repository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10.jar",
+                "/home/rd/.m2/repository/org/scala-lang/scala-compiler/2.12.10/scala-compiler-2.12.10.jar",
+                "/home/rd/.m2/repository/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10.jar",
+                "/home/rd/.m2/repository/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar",
+                "/home/rd/.m2/repository/org/scala-lang/scala-library/2.12.0/scala-library-2.12.0.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                "-source",
+                "1.8",
+                "-target",
+                "1.8",
+                "-Xlint:all,-serial,-path,-try",
+                "-g",
+                "-target",
+                "1.8",
+                "-source",
+                "1.8",
+                "-encoding",
+                "UTF-8"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework",
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "utest.runner.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    {
+                        "args": [
+                            "-v",
+                            "-a"
+                        ],
+                        "framework": {
+                            "names": [
+                                "com.novocode.junit.JUnitFramework"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/home/rd/.sdkman/candidates/java/11.0.10.hs-adpt",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "commons-io",
+                    "name": "commons-io",
+                    "version": "2.5",
+                    "artifacts": [
+                        {
+                            "name": "commons-io",
+                            "path": "/home/rd/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar"
+                        },
+                        {
+                            "name": "commons-io",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "jul-to-slf4j",
+                    "version": "1.7.30",
+                    "artifacts": [
+                        {
+                            "name": "jul-to-slf4j",
+                            "path": "/home/rd/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar"
+                        },
+                        {
+                            "name": "jul-to-slf4j",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.10.0",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.jaxrs",
+                    "name": "jackson-jaxrs-base",
+                    "version": "2.9.5",
+                    "artifacts": [
+                        {
+                            "name": "jackson-jaxrs-base",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.9.5/jackson-jaxrs-base-2.9.5.jar"
+                        },
+                        {
+                            "name": "jackson-jaxrs-base",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.9.5/jackson-jaxrs-base-2.9.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-client",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-client",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-client/3.2.0/hadoop-client-3.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-client",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-client/3.2.0/hadoop-client-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.10.0",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.protobuf",
+                    "name": "protobuf-java",
+                    "version": "2.5.0",
+                    "artifacts": [
+                        {
+                            "name": "protobuf-java",
+                            "path": "/home/rd/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar"
+                        },
+                        {
+                            "name": "protobuf-java",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-api",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-api",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.jaxrs",
+                    "name": "jackson-jaxrs-json-provider",
+                    "version": "2.9.5",
+                    "artifacts": [
+                        {
+                            "name": "jackson-jaxrs-json-provider",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.9.5/jackson-jaxrs-json-provider-2.9.5.jar"
+                        },
+                        {
+                            "name": "jackson-jaxrs-json-provider",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.9.5/jackson-jaxrs-json-provider-2.9.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-propspec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-propspec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-propspec_2.12/3.2.3/scalatest-propspec_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-lang3",
+                    "version": "3.10",
+                    "artifacts": [
+                        {
+                            "name": "commons-lang3",
+                            "path": "/home/rd/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar"
+                        },
+                        {
+                            "name": "commons-lang3",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.curator",
+                    "name": "curator-recipes",
+                    "version": "2.13.0",
+                    "artifacts": [
+                        {
+                            "name": "curator-recipes",
+                            "path": "/home/rd/.m2/repository/org/apache/curator/curator-recipes/2.13.0/curator-recipes-2.13.0.jar"
+                        },
+                        {
+                            "name": "curator-recipes",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/curator/curator-recipes/2.13.0/curator-recipes-2.13.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.eclipse.jetty",
+                    "name": "jetty-util-ajax",
+                    "version": "9.4.36.v20210114",
+                    "artifacts": [
+                        {
+                            "name": "jetty-util-ajax",
+                            "path": "/home/rd/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.36.v20210114/jetty-util-ajax-9.4.36.v20210114.jar"
+                        },
+                        {
+                            "name": "jetty-util-ajax",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.36.v20210114/jetty-util-ajax-9.4.36.v20210114-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-support",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-support",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dnsjava",
+                    "name": "dnsjava",
+                    "version": "2.1.7",
+                    "artifacts": [
+                        {
+                            "name": "dnsjava",
+                            "path": "/home/rd/.m2/repository/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.jar"
+                        },
+                        {
+                            "name": "dnsjava",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-codec",
+                    "name": "commons-codec",
+                    "version": "1.10",
+                    "artifacts": [
+                        {
+                            "name": "commons-codec",
+                            "path": "/home/rd/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"
+                        },
+                        {
+                            "name": "commons-codec",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-core_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-core_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-core_2.12/3.2.3/scalatest-core_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "token-provider",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "token-provider",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/token-provider/1.0.1/token-provider-1.0.1.jar"
+                        },
+                        {
+                            "name": "token-provider",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/token-provider/1.0.1/token-provider-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerby-xdr",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerby-xdr",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerby-xdr/1.0.1/kerby-xdr-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerby-xdr",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerby-xdr/1.0.1/kerby-xdr-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.re2j",
+                    "name": "re2j",
+                    "version": "1.1",
+                    "artifacts": [
+                        {
+                            "name": "re2j",
+                            "path": "/home/rd/.m2/repository/com/google/re2j/re2j/1.1/re2j-1.1.jar"
+                        },
+                        {
+                            "name": "re2j",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/google/re2j/re2j/1.1/re2j-1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-annotations",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-annotations",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-annotations/3.2.0/hadoop-annotations-3.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-annotations",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-annotations/3.2.0/hadoop-annotations-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.30",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/home/rd/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.xml.bind",
+                    "name": "jaxb-api",
+                    "version": "2.2.11",
+                    "artifacts": [
+                        {
+                            "name": "jaxb-api",
+                            "path": "/home/rd/.m2/repository/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11.jar"
+                        },
+                        {
+                            "name": "jaxb-api",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hamcrest",
+                    "name": "hamcrest-core",
+                    "version": "1.3",
+                    "artifacts": [
+                        {
+                            "name": "hamcrest-core",
+                            "path": "/home/rd/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.xerial.snappy",
+                    "name": "snappy-java",
+                    "version": "1.1.8.2",
+                    "artifacts": [
+                        {
+                            "name": "snappy-java",
+                            "path": "/home/rd/.m2/repository/org/xerial/snappy/snappy-java/1.1.8.2/snappy-java-1.1.8.2.jar"
+                        },
+                        {
+                            "name": "snappy-java",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/xerial/snappy/snappy-java/1.1.8.2/snappy-java-1.1.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-yarn-common",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-yarn-common",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-yarn-common/3.2.0/hadoop-yarn-common-3.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-yarn-common",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-yarn-common/3.2.0/hadoop-yarn-common-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.squareup.okio",
+                    "name": "okio",
+                    "version": "1.14.0",
+                    "artifacts": [
+                        {
+                            "name": "okio",
+                            "path": "/home/rd/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar"
+                        },
+                        {
+                            "name": "okio",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-text",
+                    "version": "1.6",
+                    "artifacts": [
+                        {
+                            "name": "commons-text",
+                            "path": "/home/rd/.m2/repository/org/apache/commons/commons-text/1.6/commons-text-1.6.jar"
+                        },
+                        {
+                            "name": "commons-text",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/commons/commons-text/1.6/commons-text-1.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerby-util",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerby-util",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerby-util/1.0.1/kerby-util-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerby-util",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerby-util/1.0.1/kerby-util-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.httpcomponents",
+                    "name": "httpcore",
+                    "version": "4.4.12",
+                    "artifacts": [
+                        {
+                            "name": "httpcore",
+                            "path": "/home/rd/.m2/repository/org/apache/httpcomponents/httpcore/4.4.12/httpcore-4.4.12.jar"
+                        },
+                        {
+                            "name": "httpcore",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/httpcomponents/httpcore/4.4.12/httpcore-4.4.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.spark-project.spark",
+                    "name": "unused",
+                    "version": "1.0.0",
+                    "artifacts": [
+                        {
+                            "name": "unused",
+                            "path": "/home/rd/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar"
+                        },
+                        {
+                            "name": "unused",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerb-server",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerb-server",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-server/1.0.1/kerb-server-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerb-server",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-server/1.0.1/kerb-server-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerb-core",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerb-core",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-core/1.0.1/kerb-core-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerb-core",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-core/1.0.1/kerb-core-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-log4j12",
+                    "version": "1.7.30",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-log4j12",
+                            "path": "/home/rd/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar"
+                        },
+                        {
+                            "name": "slf4j-log4j12",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerby-asn1",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerby-asn1",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerby-asn1/1.0.1/kerby-asn1-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerby-asn1",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerby-asn1/1.0.1/kerby-asn1-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-yarn-api",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-yarn-api",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-yarn-api/3.2.0/hadoop-yarn-api-3.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-yarn-api",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-yarn-api/3.2.0/hadoop-yarn-api-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerb-util",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerb-util",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-util/1.0.1/kerb-util-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerb-util",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-util/1.0.1/kerb-util-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalactic",
+                    "name": "scalactic_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalactic_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalactic/scalactic_2.12/3.2.3/scalactic_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.woodstox",
+                    "name": "woodstox-core",
+                    "version": "5.0.3",
+                    "artifacts": [
+                        {
+                            "name": "woodstox-core",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/woodstox/woodstox-core/5.0.3/woodstox-core-5.0.3.jar"
+                        },
+                        {
+                            "name": "woodstox-core",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/woodstox/woodstox-core/5.0.3/woodstox-core-5.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funsuite_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funsuite_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-funsuite_2.12/3.2.3/scalatest-funsuite_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-matchers-core_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-matchers-core_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-matchers-core_2.12/3.2.3/scalatest-matchers-core_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.minidev",
+                    "name": "json-smart",
+                    "version": "2.3",
+                    "artifacts": [
+                        {
+                            "name": "json-smart",
+                            "path": "/home/rd/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar"
+                        },
+                        {
+                            "name": "json-smart",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatestplus",
+                    "name": "scalatestplus-selenium_2.12",
+                    "version": "1.0.0-SNAP5",
+                    "artifacts": [
+                        {
+                            "name": "scalatestplus-selenium_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatestplus/scalatestplus-selenium_2.12/1.0.0-SNAP5/scalatestplus-selenium_2.12-1.0.0-SNAP5.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerb-client",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerb-client",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-client/1.0.1/kerb-client-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerb-client",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-client/1.0.1/kerb-client-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.bytebuddy",
+                    "name": "byte-buddy",
+                    "version": "1.10.13",
+                    "artifacts": [
+                        {
+                            "name": "byte-buddy",
+                            "path": "/home/rd/.m2/repository/net/bytebuddy/byte-buddy/1.10.13/byte-buddy-1.10.13.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerb-identity",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerb-identity",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-identity/1.0.1/kerb-identity-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerb-identity",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-identity/1.0.1/kerb-identity-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.eclipse.jetty",
+                    "name": "jetty-util",
+                    "version": "9.4.36.v20210114",
+                    "artifacts": [
+                        {
+                            "name": "jetty-util",
+                            "path": "/home/rd/.m2/repository/org/eclipse/jetty/jetty-util/9.4.36.v20210114/jetty-util-9.4.36.v20210114.jar"
+                        },
+                        {
+                            "name": "jetty-util",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/eclipse/jetty/jetty-util/9.4.36.v20210114/jetty-util-9.4.36.v20210114-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-freespec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-freespec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-freespec_2.12/3.2.3/scalatest-freespec_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-yarn-client",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-yarn-client",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-yarn-client/3.2.0/hadoop-yarn-client-3.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-yarn-client",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-yarn-client/3.2.0/hadoop-yarn-client-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.curator",
+                    "name": "curator-client",
+                    "version": "2.13.0",
+                    "artifacts": [
+                        {
+                            "name": "curator-client",
+                            "path": "/home/rd/.m2/repository/org/apache/curator/curator-client/2.13.0/curator-client-2.13.0.jar"
+                        },
+                        {
+                            "name": "curator-client",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/curator/curator-client/2.13.0/curator-client-2.13.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-mapreduce-client-jobclient",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-mapreduce-client-jobclient",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-jobclient/3.2.0/hadoop-mapreduce-client-jobclient-3.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-mapreduce-client-jobclient",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-jobclient/3.2.0/hadoop-mapreduce-client-jobclient-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-mapreduce-client-common",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-mapreduce-client-common",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-common/3.2.0/hadoop-mapreduce-client-common-3.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-mapreduce-client-common",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-common/3.2.0/hadoop-mapreduce-client-common-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-jaxb-annotations",
+                    "version": "2.10.0",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-jaxb-annotations",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.10.0/jackson-module-jaxb-annotations-2.10.0.jar"
+                        },
+                        {
+                            "name": "jackson-module-jaxb-annotations",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.10.0/jackson-module-jaxb-annotations-2.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest_2.12/3.2.3/scalatest_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-safari-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-safari-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.httpcomponents",
+                    "name": "httpclient",
+                    "version": "4.5.6",
+                    "artifacts": [
+                        {
+                            "name": "httpclient",
+                            "path": "/home/rd/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar"
+                        },
+                        {
+                            "name": "httpclient",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "guava",
+                    "version": "14.0.1",
+                    "artifacts": [
+                        {
+                            "name": "guava",
+                            "path": "/home/rd/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar"
+                        },
+                        {
+                            "name": "guava",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.minidev",
+                    "name": "accessors-smart",
+                    "version": "1.2",
+                    "artifacts": [
+                        {
+                            "name": "accessors-smart",
+                            "path": "/home/rd/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar"
+                        },
+                        {
+                            "name": "accessors-smart",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.12",
+                    "version": "1.2.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.12",
+                            "path": "/home/rd/.m2/repository/org/scala-lang/modules/scala-xml_2.12/1.2.0/scala-xml_2.12-1.2.0.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.12",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/scala-lang/modules/scala-xml_2.12/1.2.0/scala-xml_2.12-1.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-edge-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-edge-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-ie-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-ie-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.nimbusds",
+                    "name": "nimbus-jose-jwt",
+                    "version": "4.41.1",
+                    "artifacts": [
+                        {
+                            "name": "nimbus-jose-jwt",
+                            "path": "/home/rd/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.1/nimbus-jose-jwt-4.41.1.jar"
+                        },
+                        {
+                            "name": "nimbus-jose-jwt",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.1/nimbus-jose-jwt-4.41.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerb-crypto",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerb-crypto",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-crypto/1.0.1/kerb-crypto-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerb-crypto",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-crypto/1.0.1/kerb-crypto-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.bytebuddy",
+                    "name": "byte-buddy-agent",
+                    "version": "1.10.13",
+                    "artifacts": [
+                        {
+                            "name": "byte-buddy-agent",
+                            "path": "/home/rd/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.13/byte-buddy-agent-1.10.13.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-beanutils",
+                    "name": "commons-beanutils",
+                    "version": "1.9.4",
+                    "artifacts": [
+                        {
+                            "name": "commons-beanutils",
+                            "path": "/home/rd/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar"
+                        },
+                        {
+                            "name": "commons-beanutils",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-cli",
+                    "name": "commons-cli",
+                    "version": "1.2",
+                    "artifacts": [
+                        {
+                            "name": "commons-cli",
+                            "path": "/home/rd/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar"
+                        },
+                        {
+                            "name": "commons-cli",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.objenesis",
+                    "name": "objenesis",
+                    "version": "2.6",
+                    "artifacts": [
+                        {
+                            "name": "objenesis",
+                            "path": "/home/rd/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar"
+                        },
+                        {
+                            "name": "objenesis",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.mockito",
+                    "name": "mockito-core",
+                    "version": "3.4.6",
+                    "artifacts": [
+                        {
+                            "name": "mockito-core",
+                            "path": "/home/rd/.m2/repository/org/mockito/mockito-core/3.4.6/mockito-core-3.4.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.10",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/rd/.m2/repository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-exec",
+                    "version": "1.3",
+                    "artifacts": [
+                        {
+                            "name": "commons-exec",
+                            "path": "/home/rd/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-wordspec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-wordspec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-wordspec_2.12/3.2.3/scalatest-wordspec_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.stephenc.jcip",
+                    "name": "jcip-annotations",
+                    "version": "1.0-1",
+                    "artifacts": [
+                        {
+                            "name": "jcip-annotations",
+                            "path": "/home/rd/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar"
+                        },
+                        {
+                            "name": "jcip-annotations",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatestplus",
+                    "name": "scalatestplus-mockito_2.12",
+                    "version": "1.0.0-SNAP5",
+                    "artifacts": [
+                        {
+                            "name": "scalatestplus-mockito_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatestplus/scalatestplus-mockito_2.12/1.0.0-SNAP5/scalatestplus-mockito_2.12-1.0.0-SNAP5.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-net",
+                    "name": "commons-net",
+                    "version": "3.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-net",
+                            "path": "/home/rd/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar"
+                        },
+                        {
+                            "name": "commons-net",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-mapreduce-client-core",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-mapreduce-client-core",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/3.2.0/hadoop-mapreduce-client-core-3.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-mapreduce-client-core",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/3.2.0/hadoop-mapreduce-client-core-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "jakarta.xml.bind",
+                    "name": "jakarta.xml.bind-api",
+                    "version": "2.3.2",
+                    "artifacts": [
+                        {
+                            "name": "jakarta.xml.bind-api",
+                            "path": "/home/rd/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar"
+                        },
+                        {
+                            "name": "jakarta.xml.bind-api",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.squareup.okhttp3",
+                    "name": "okhttp",
+                    "version": "3.11.0",
+                    "artifacts": [
+                        {
+                            "name": "okhttp",
+                            "path": "/home/rd/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "junit",
+                    "name": "junit",
+                    "version": "4.13.1",
+                    "artifacts": [
+                        {
+                            "name": "junit",
+                            "path": "/home/rd/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-math3",
+                    "version": "3.4.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-math3",
+                            "path": "/home/rd/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar"
+                        },
+                        {
+                            "name": "commons-math3",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.10.0",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.avro",
+                    "name": "avro",
+                    "version": "1.8.2",
+                    "artifacts": [
+                        {
+                            "name": "avro",
+                            "path": "/home/rd/.m2/repository/org/apache/avro/avro/1.8.2/avro-1.8.2.jar"
+                        },
+                        {
+                            "name": "avro",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/avro/avro/1.8.2/avro-1.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-hdfs-client",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-hdfs-client",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.2.0/hadoop-hdfs-client-3.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-hdfs-client",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.2.0/hadoop-hdfs-client-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.gson",
+                    "name": "gson",
+                    "version": "2.2.4",
+                    "artifacts": [
+                        {
+                            "name": "gson",
+                            "path": "/home/rd/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"
+                        },
+                        {
+                            "name": "gson",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerb-common",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerb-common",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-common/1.0.1/kerb-common-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerb-common",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-common/1.0.1/kerb-common-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "log4j",
+                    "name": "log4j",
+                    "version": "1.2.17",
+                    "artifacts": [
+                        {
+                            "name": "log4j",
+                            "path": "/home/rd/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar"
+                        },
+                        {
+                            "name": "log4j",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerb-simplekdc",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerb-simplekdc",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-simplekdc/1.0.1/kerb-simplekdc-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerb-simplekdc",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-simplekdc/1.0.1/kerb-simplekdc-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.codehaus.jackson",
+                    "name": "jackson-core-asl",
+                    "version": "1.9.13",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core-asl",
+                            "path": "/home/rd/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar"
+                        },
+                        {
+                            "name": "jackson-core-asl",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.squareup.okhttp",
+                    "name": "okhttp",
+                    "version": "2.7.5",
+                    "artifacts": [
+                        {
+                            "name": "okhttp",
+                            "path": "/home/rd/.m2/repository/com/squareup/okhttp/okhttp/2.7.5/okhttp-2.7.5.jar"
+                        },
+                        {
+                            "name": "okhttp",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/squareup/okhttp/okhttp/2.7.5/okhttp-2.7.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalacheck",
+                    "name": "scalacheck_2.12",
+                    "version": "1.14.2",
+                    "artifacts": [
+                        {
+                            "name": "scalacheck_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalacheck/scalacheck_2.12/1.14.2/scalacheck_2.12-1.14.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerby-config",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerby-config",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerby-config/1.0.1/kerby-config-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerby-config",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerby-config/1.0.1/kerby-config-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-remote-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-remote-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerby-pkix",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerby-pkix",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerby-pkix/1.0.1/kerby-pkix-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerby-pkix",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerby-pkix/1.0.1/kerby-pkix-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-opera-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-opera-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-auth",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-auth",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-auth/3.2.0/hadoop-auth-3.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-auth",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-auth/3.2.0/hadoop-auth-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-diagrams_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-diagrams_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-diagrams_2.12/3.2.3/scalatest-diagrams_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-mustmatchers_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-mustmatchers_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-mustmatchers_2.12/3.2.3/scalatest-mustmatchers_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-firefox-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-firefox-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.spark",
+                    "name": "spark-tags_2.12",
+                    "version": "3.1.1",
+                    "artifacts": [
+                        {
+                            "name": "spark-tags_2.12",
+                            "path": "/home/rd/.m2/repository/org/apache/spark/spark-tags_2.12/3.1.1/spark-tags_2.12-3.1.1.jar"
+                        },
+                        {
+                            "name": "spark-tags_2.12",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/spark/spark-tags_2.12/3.1.1/spark-tags_2.12-3.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.eclipse.jetty",
+                    "name": "jetty-servlet",
+                    "version": "9.4.36.v20210114",
+                    "artifacts": [
+                        {
+                            "name": "jetty-servlet",
+                            "path": "/home/rd/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.36.v20210114/jetty-servlet-9.4.36.v20210114.jar"
+                        },
+                        {
+                            "name": "jetty-servlet",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.36.v20210114/jetty-servlet-9.4.36.v20210114-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.12.10",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/home/rd/.m2/repository/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kerby",
+                    "name": "kerb-admin",
+                    "version": "1.0.1",
+                    "artifacts": [
+                        {
+                            "name": "kerb-admin",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-admin/1.0.1/kerb-admin-1.0.1.jar"
+                        },
+                        {
+                            "name": "kerb-admin",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/kerby/kerb-admin/1.0.1/kerb-admin-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.htrace",
+                    "name": "htrace-core4",
+                    "version": "4.1.0-incubating",
+                    "artifacts": [
+                        {
+                            "name": "htrace-core4",
+                            "path": "/home/rd/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar"
+                        },
+                        {
+                            "name": "htrace-core4",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funspec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funspec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-funspec_2.12/3.2.3/scalatest-funspec_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-featurespec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-featurespec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-featurespec_2.12/3.2.3/scalatest-featurespec_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "jakarta.activation",
+                    "name": "jakarta.activation-api",
+                    "version": "1.2.1",
+                    "artifacts": [
+                        {
+                            "name": "jakarta.activation-api",
+                            "path": "/home/rd/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar"
+                        },
+                        {
+                            "name": "jakarta.activation-api",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-java",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-java",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.servlet.jsp",
+                    "name": "jsp-api",
+                    "version": "2.1",
+                    "artifacts": [
+                        {
+                            "name": "jsp-api",
+                            "path": "/home/rd/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar"
+                        },
+                        {
+                            "name": "jsp-api",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-refspec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-refspec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-refspec_2.12/3.2.3/scalatest-refspec_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-compress",
+                    "version": "1.20",
+                    "artifacts": [
+                        {
+                            "name": "commons-compress",
+                            "path": "/home/rd/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar"
+                        },
+                        {
+                            "name": "commons-compress",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-collections",
+                    "name": "commons-collections",
+                    "version": "3.2.2",
+                    "artifacts": [
+                        {
+                            "name": "commons-collections",
+                            "path": "/home/rd/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar"
+                        },
+                        {
+                            "name": "commons-collections",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.eclipse.jetty",
+                    "name": "jetty-security",
+                    "version": "9.4.36.v20210114",
+                    "artifacts": [
+                        {
+                            "name": "jetty-security",
+                            "path": "/home/rd/.m2/repository/org/eclipse/jetty/jetty-security/9.4.36.v20210114/jetty-security-9.4.36.v20210114.jar"
+                        },
+                        {
+                            "name": "jetty-security",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/eclipse/jetty/jetty-security/9.4.36.v20210114/jetty-security-9.4.36.v20210114-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.tukaani",
+                    "name": "xz",
+                    "version": "1.5",
+                    "artifacts": [
+                        {
+                            "name": "xz",
+                            "path": "/home/rd/.m2/repository/org/tukaani/xz/1.5/xz-1.5.jar"
+                        },
+                        {
+                            "name": "xz",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/tukaani/xz/1.5/xz-1.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.codehaus.woodstox",
+                    "name": "stax2-api",
+                    "version": "3.1.4",
+                    "artifacts": [
+                        {
+                            "name": "stax2-api",
+                            "path": "/home/rd/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar"
+                        },
+                        {
+                            "name": "stax2-api",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatestplus",
+                    "name": "scalatestplus-scalacheck_2.12",
+                    "version": "3.1.0.0-RC2",
+                    "artifacts": [
+                        {
+                            "name": "scalatestplus-scalacheck_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatestplus/scalatestplus-scalacheck_2.12/3.1.0.0-RC2/scalatestplus-scalacheck_2.12-3.1.0.0-RC2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.hadoop",
+                    "name": "hadoop-common",
+                    "version": "3.2.0",
+                    "artifacts": [
+                        {
+                            "name": "hadoop-common",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-common/3.2.0/hadoop-common-3.2.0.jar"
+                        },
+                        {
+                            "name": "hadoop-common",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/hadoop/hadoop-common/3.2.0/hadoop-common-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-sbt",
+                    "name": "test-interface",
+                    "version": "1.0",
+                    "artifacts": [
+                        {
+                            "name": "test-interface",
+                            "path": "/home/rd/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.seleniumhq.selenium",
+                    "name": "selenium-chrome-driver",
+                    "version": "3.141.59",
+                    "artifacts": [
+                        {
+                            "name": "selenium-chrome-driver",
+                            "path": "/home/rd/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-shouldmatchers_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-shouldmatchers_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-shouldmatchers_2.12/3.2.3/scalatest-shouldmatchers_2.12-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-configuration2",
+                    "version": "2.1.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-configuration2",
+                            "path": "/home/rd/.m2/repository/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1.jar"
+                        },
+                        {
+                            "name": "commons-configuration2",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "/home/rd/.m2/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.novocode",
+                    "name": "junit-interface",
+                    "version": "0.11",
+                    "artifacts": [
+                        {
+                            "name": "junit-interface",
+                            "path": "/home/rd/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.curator",
+                    "name": "curator-framework",
+                    "version": "2.13.0",
+                    "artifacts": [
+                        {
+                            "name": "curator-framework",
+                            "path": "/home/rd/.m2/repository/org/apache/curator/curator-framework/2.13.0/curator-framework-2.13.0.jar"
+                        },
+                        {
+                            "name": "curator-framework",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/org/apache/curator/curator-framework/2.13.0/curator-framework-2.13.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-compatible",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-compatible",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-compatible/3.2.3/scalatest-compatible-3.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.thoughtworks.paranamer",
+                    "name": "paranamer",
+                    "version": "2.8",
+                    "artifacts": [
+                        {
+                            "name": "paranamer",
+                            "path": "/home/rd/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"
+                        },
+                        {
+                            "name": "paranamer",
+                            "classifier": "sources",
+                            "path": "/home/rd/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-flatspec_2.12",
+                    "version": "3.2.3",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-flatspec_2.12",
+                            "path": "/home/rd/.m2/repository/org/scalatest/scalatest-flatspec_2.12/3.2.3/scalatest-flatspec_2.12-3.2.3.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}
