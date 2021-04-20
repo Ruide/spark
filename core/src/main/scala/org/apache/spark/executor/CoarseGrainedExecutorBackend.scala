@@ -374,20 +374,20 @@ private[spark] object CoarseGrainedExecutorBackend extends Logging {
 
   def main(args: Array[String]): Unit = {
     // Enable the security manager
-    try {
-      val securityManager = new java.lang.SecurityManager
-      System.setSecurityManager(securityManager)
-    } catch {
-      case se: SecurityException =>
+    // try {
+        // val securityManager = new java.lang.SecurityManager
+        // System.setSecurityManager(securityManager)
+    // } catch {
+      // case se: SecurityException =>
         // SecurityManager already set
         // scalastyle:off
-        System.out.println("SecurityManager already set")
+        // System.out.println("SecurityManager already set")
         // scalastyle:on println
-    }
+    //}
 
-    System.in.close();
-    System.err.close();
-    System.out.close();
+    // System.in.close();
+    // System.err.close();
+    // System.out.close();
 
     val createFn: (RpcEnv, Arguments, SparkEnv, ResourceProfile) =>
       CoarseGrainedExecutorBackend = { case (rpcEnv, arguments, env, resourceProfile) =>
